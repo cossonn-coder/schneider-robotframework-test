@@ -1,0 +1,25 @@
+# Environnement virtuel
+.venv/
+
+# Cache Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Pytest
+.pytest_cache/
+*.egg-info/
+
+# Logs Robot Framework
+logs/output.xml
+logs/log.html
+logs/report.html
+
+# VSCode
+# .vscode/
+
+# OS
+.DS_Store
+Thumbs.db
