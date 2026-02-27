@@ -40,13 +40,21 @@ schneider_robotframework/
 
 ## Lancer les tests
 ```powershell
-# Installer les dépendances
+# 1. Cloner le projet
+git clone https://github.com/cossonn-coder/schneider-robotframework-test
+cd schneider-robotframework-test
+
+# 2. Créer et activer le venv
+python -m venv .venv
+.venv\Scripts\Activate.ps1
+
+# 3. Installer les dépendances
 pip install -r requirements.txt
 
-# Tests unitaires
+# 4. Tests unitaires
 pytest tests/unit/ -v
 
-# Tests d'acceptance
+# 5. Tests d'acceptance
 robot --pythonpath . --pythonpath src --outputdir logs tests/robot/
 ```
 
